@@ -41,9 +41,3 @@ Se fomenta la creatividad y la colaboración para explorar diferentes alternativ
 
 **Evidencia:**  
 Enlace: https://www.canva.com/design/DAG0969zhO8/hXW7-NN-1Ve_aPaEqkpzbg/view
-
----
-
-## Conclusión
-La aplicación de **Design Thinking** permite comprender profundamente al usuario y orientar el diseño hacia soluciones más intuitivas, funcionales y alineadas con sus necesidades.  
-Las evidencias generadas en esta fase constituyen la base para la construcción del diseño visual y funcional del sistema.
