@@ -15,6 +15,9 @@ Se emplean herramientas cualitativas como entrevistas, encuestas y mapas de empa
 - Prefieren interfaces simples, visuales y accesibles.
 
 **Evidencia:**  
+
+![Fase de Empatizar](../assets/03_mapa_de_empatia.png)  
+
 Enlace: https://www.canva.com/design/DAG09uMkAno/NdvdOABt8sPLh3oRdn-Dag/view
 
 ---
@@ -26,6 +29,9 @@ En esta fase, se analizan y organizan los hallazgos obtenidos durante la etapa a
 > “Los usuarios del área operativa necesitan una solución digital que optimice el registro y control de inventarios, reduciendo errores y tiempos de gestión.”
 
 **Evidencia:**  
+
+![Fase de Definir](../assets/04_diagrama_de_afinidad.png)  
+
 Enlace: https://www.canva.com/design/DAG091mPNzk/AkA4RgjAdyayYHMo_ALukw/view
 
 ---
@@ -40,4 +46,8 @@ Se fomenta la creatividad y la colaboración para explorar diferentes alternativ
 - Elaboración de bocetos iniciales del sistema.
 
 **Evidencia:**  
+
+![Fase de Idear](../assets/05_lluvia_de_ideas.png)  
+
 Enlace: https://www.canva.com/design/DAG0969zhO8/hXW7-NN-1Ve_aPaEqkpzbg/view
+

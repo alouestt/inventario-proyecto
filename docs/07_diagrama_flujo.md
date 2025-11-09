@@ -11,6 +11,9 @@ Su objetivo es ilustrar las interacciones principales entre el usuario y el sist
 5. Elaboración de reportes o consultas.  
 6. Finalización del proceso.
 
+![Diagrama de flujo](../assets/02_diagrama_de_flujo.png)  
+
 Enlace: https://drive.google.com/file/d/1iPLm-PgMeVpF0JvKENqieSyy0w59ik7u/view
 
 Este diagrama no refleja código, sino la estructura conceptual y visual que sustenta el diseño del sistema.
+
