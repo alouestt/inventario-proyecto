@@ -1,4 +1,4 @@
-# 07. Diagrama de flujo del sistema
+# 08. Diagrama de flujo del sistema
 
 El diagrama de flujo representa la secuencia lógica de actividades dentro del proceso de gestión de inventarios.  
 Su objetivo es ilustrar las interacciones principales entre el usuario y el sistema.
@@ -16,4 +16,5 @@ Su objetivo es ilustrar las interacciones principales entre el usuario y el sist
 Enlace: https://drive.google.com/file/d/1iPLm-PgMeVpF0JvKENqieSyy0w59ik7u/view
 
 Este diagrama no refleja código, sino la estructura conceptual y visual que sustenta el diseño del sistema.
+
 
