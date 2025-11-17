@@ -1,4 +1,4 @@
-# 06. Evidencias de Design Thinking
+# 07. Evidencias de Design Thinking
 
 El proyecto aplica la metodología **Design Thinking** como enfoque principal para comprender el problema y definir soluciones centradas en las necesidades reales del usuario.  
 En esta fase se desarrollan las etapas de **Empatizar, Definir e Idear**, que permiten obtener información valiosa, estructurar hallazgos y generar propuestas creativas de diseño.
@@ -50,4 +50,5 @@ Se fomenta la creatividad y la colaboración para explorar diferentes alternativ
 ![Fase de Idear](../assets/05_lluvia_de_ideas.png)  
 
 Enlace: https://www.canva.com/design/DAG0969zhO8/hXW7-NN-1Ve_aPaEqkpzbg/view
+
 
