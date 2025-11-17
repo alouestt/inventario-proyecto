@@ -1,6 +1,6 @@
 # 06. Prototipo de baja fidelidad
 
-A continuación, se presenta el prototipo de baja fidelidad elaborado en Balsamiq, el cual incluye las plantillas correspondientes a las seis pruebas de usuario descritas a continuación.
+A continuación, se presenta el prototipo de baja fidelidad elaborado en Balsamiq, el cual incluye las plantillas correspondientes a las seis historias de usuario descritas a continuación.
 
 ---
 
