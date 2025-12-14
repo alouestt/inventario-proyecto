@@ -6,12 +6,12 @@ Este repositorio contiene la documentación, análisis y diseño funcional del p
 Diseñar una propuesta tecnológica que optimice el control y seguimiento de inventarios en empresas del sector productivo.
 
 ## Estado actual
-Fase: Planeación y Diseño (sin código implementado)
+Fase: Planeación, diseño e implementación
 
 ## Contenido
 - Documentación técnica y de diseño (carpeta `/docs`)
 - Recursos gráficos (carpeta `/assets`)
-- Gestión ágil (carpeta `/scrum`)
+- Página web (carpeta `/inventory-system`)
 
 ## Equipo
 - **Product Owner / Tutor académico:** Alejandra Vargas
