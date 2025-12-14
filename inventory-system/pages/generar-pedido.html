@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sistema de Inventario - Generar pedido de reposición</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+        />
+        <link rel="stylesheet" href="../css/styles.css" />
+    </head>
+
+    <body class="admin-body">
+        <header class="header">
+            <div class="nav-icon"></div>
+
+            <div class="other-links">
+                <div class="profile">
+                    <div class="logo-container">
+                        <img
+                            src="../images/logo-menu.png"
+                            alt="Logo"
+                            class="logo-img"
+                        />
+                    </div>
+
+                    <div class="profile-avatar">
+                        <img
+                            src="../images/admin.png"
+                            alt="Avatar"
+                            width="40"
+                            height="40"
+                        />
+                    </div>
+
+                    <div class="profile-text">Administrador</div>
+
+                    <div class="down-icon">
+                        <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 8 8"
+                            fill="none"
+                        >
+                            <path
+                                d="M3.6235 5.57L1.2255 2.829C0.9425 2.5065 1.1725 2 1.602 2H6.398C6.49412 1.99992 6.58823 2.02754 6.66906 2.07957C6.74988 2.1316 6.814 2.20582 6.85373 2.29335C6.89345 2.38087 6.90711 2.478 6.89306 2.57309C6.87901 2.66818 6.83785 2.7572 6.7745 2.8295L4.3765 5.5695C4.32957 5.6232 4.27169 5.66625 4.20676 5.69574C4.14182 5.72523 4.07132 5.74049 4 5.74049C3.92868 5.74049 3.85818 5.72523 3.79325 5.69574C3.72831 5.66625 3.67043 5.6232 3.6235 5.5695V5.57Z"
+                                fill="#101540"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-section">
+            <aside class="sidebar">
+                <div class="nav-links">
+                    <div
+                        class="link active"
+                        data-target="../pages/registrar-producto.html"
+                    >
+                        <div class="icon">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                            >
+                                <path
+                                    d="M21 1.5H3C2.6023 1.5004 2.221 1.65856 1.93978 1.93978C1.65856 2.221 1.5004 2.6023 1.5 3V21C1.5004 21.3977 1.65856 21.779 1.93978 22.0602C2.221 22.3414 2.6023 22.4996 3 22.5H21C21.3976 22.4994 21.7788 22.3412 22.06 22.06C22.3412 21.7788 22.4994 21.3976 22.5 21V3C22.4996 2.6023 22.3414 2.221 22.0602 1.93978C21.779 1.65856 21.3977 1.5004 21 1.5ZM21 8.25H10.5V3H21V8.25ZM9 3V8.25H3V3H9ZM3 21V9.75H21L21.0015 21H3Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M18 15.75H19.5V19.5H18V15.75ZM15 12H16.5V19.5H15V12ZM8.25 19.5C7.2558 19.4988 6.30267 19.1033 5.59966 18.4003C4.89666 17.6973 4.50119 16.7442 4.5 15.75H6C6 16.195 6.13196 16.63 6.37919 17C6.62643 17.37 6.97783 17.6584 7.38896 17.8287C7.8001 17.999 8.2525 18.0436 8.68895 17.9568C9.12541 17.87 9.52632 17.6557 9.84099 17.341C10.1557 17.0263 10.37 16.6254 10.4568 16.189C10.5436 15.7525 10.499 15.3001 10.3287 14.889C10.1584 14.4778 9.87004 14.1264 9.50003 13.8792C9.13002 13.632 8.69501 13.5 8.25 13.5V12C9.24456 12 10.1984 12.3951 10.9017 13.0983C11.6049 13.8016 12 14.7554 12 15.75C12 16.7446 11.6049 17.6984 10.9017 18.4017C10.1984 19.1049 9.24456 19.5 8.25 19.5Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
+                        <div class="link-text">
+                            <p>Registrar producto</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="link"
+                        data-target="../pages/gestionar-productos.html"
+                    >
+                        <div class="icon">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                            >
+                                <path
+                                    d="M21 1.5H3C2.6023 1.5004 2.221 1.65856 1.93978 1.93978C1.65856 2.221 1.5004 2.6023 1.5 3V21C1.5004 21.3977 1.65856 21.779 1.93978 22.0602C2.221 22.3414 2.6023 22.4996 3 22.5H21C21.3976 22.4994 21.7788 22.3412 22.06 22.06C22.3412 21.7788 22.4994 21.3976 22.5 21V3C22.4996 2.6023 22.3414 2.221 22.0602 1.93978C21.779 1.65856 21.3977 1.5004 21 1.5ZM21 8.25H10.5V3H21V8.25ZM9 3V8.25H3V3H9ZM3 21V9.75H21L21.0015 21H3Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M18 15.75H19.5V19.5H18V15.75ZM15 12H16.5V19.5H15V12ZM8.25 19.5C7.2558 19.4988 6.30267 19.1033 5.59966 18.4003C4.89666 17.6973 4.50119 16.7442 4.5 15.75H6C6 16.195 6.13196 16.63 6.37919 17C6.62643 17.37 6.97783 17.6584 7.38896 17.8287C7.8001 17.999 8.2525 18.0436 8.68895 17.9568C9.12541 17.87 9.52632 17.6557 9.84099 17.341C10.1557 17.0263 10.37 16.6254 10.4568 16.189C10.5436 15.7525 10.499 15.3001 10.3287 14.889C10.1584 14.4778 9.87004 14.1264 9.50003 13.8792C9.13002 13.632 8.69501 13.5 8.25 13.5V12C9.24456 12 10.1984 12.3951 10.9017 13.0983C11.6049 13.8016 12 14.7554 12 15.75C12 16.7446 11.6049 17.6984 10.9017 18.4017C10.1984 19.1049 9.24456 19.5 8.25 19.5Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
+                        <div class="link-text">
+                            <p>Gestionar productos</p>
+                        </div>
+                    </div>
+
+                    <div class="link" data-target="../pages/alertas-stock.html">
+                        <div class="icon">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                            >
+                                <path
+                                    d="M21 1.5H3C2.6023 1.5004 2.221 1.65856 1.93978 1.93978C1.65856 2.221 1.5004 2.6023 1.5 3V21C1.5004 21.3977 1.65856 21.779 1.93978 22.0602C2.221 22.3414 2.6023 22.4996 3 22.5H21C21.3976 22.4994 21.7788 22.3412 22.06 22.06C22.3412 21.7788 22.4994 21.3976 22.5 21V3C22.4996 2.6023 22.3414 2.221 22.0602 1.93978C21.779 1.65856 21.3977 1.5004 21 1.5ZM21 8.25H10.5V3H21V8.25ZM9 3V8.25H3V3H9ZM3 21V9.75H21L21.0015 21H3Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M18 15.75H19.5V19.5H18V15.75ZM15 12H16.5V19.5H15V12ZM8.25 19.5C7.2558 19.4988 6.30267 19.1033 5.59966 18.4003C4.89666 17.6973 4.50119 16.7442 4.5 15.75H6C6 16.195 6.13196 16.63 6.37919 17C6.62643 17.37 6.97783 17.6584 7.38896 17.8287C7.8001 17.999 8.2525 18.0436 8.68895 17.9568C9.12541 17.87 9.52632 17.6557 9.84099 17.341C10.1557 17.0263 10.37 16.6254 10.4568 16.189C10.5436 15.7525 10.499 15.3001 10.3287 14.889C10.1584 14.4778 9.87004 14.1264 9.50003 13.8792C9.13002 13.632 8.69501 13.5 8.25 13.5V12C9.24456 12 10.1984 12.3951 10.9017 13.0983C11.6049 13.8016 12 14.7554 12 15.75C12 16.7446 11.6049 17.6984 10.9017 18.4017C10.1984 19.1049 9.24456 19.5 8.25 19.5Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
+                        <div class="link-text">
+                            <p>Alertas de bajo stock</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="link"
+                        data-target="../pages/generar-pedido.html"
+                    >
+                        <div class="icon">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                            >
+                                <path
+                                    d="M21 1.5H3C2.6023 1.5004 2.221 1.65856 1.93978 1.93978C1.65856 2.221 1.5004 2.6023 1.5 3V21C1.5004 21.3977 1.65856 21.779 1.93978 22.0602C2.221 22.3414 2.6023 22.4996 3 22.5H21C21.3976 22.4994 21.7788 22.3412 22.06 22.06C22.3412 21.7788 22.4994 21.3976 22.5 21V3C22.4996 2.6023 22.3414 2.221 22.0602 1.93978C21.779 1.65856 21.3977 1.5004 21 1.5ZM21 8.25H10.5V3H21V8.25ZM9 3V8.25H3V3H9ZM3 21V9.75H21L21.0015 21H3Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M18 15.75H19.5V19.5H18V15.75ZM15 12H16.5V19.5H15V12ZM8.25 19.5C7.2558 19.4988 6.30267 19.1033 5.59966 18.4003C4.89666 17.6973 4.50119 16.7442 4.5 15.75H6C6 16.195 6.13196 16.63 6.37919 17C6.62643 17.37 6.97783 17.6584 7.38896 17.8287C7.8001 17.999 8.2525 18.0436 8.68895 17.9568C9.12541 17.87 9.52632 17.6557 9.84099 17.341C10.1557 17.0263 10.37 16.6254 10.4568 16.189C10.5436 15.7525 10.499 15.3001 10.3287 14.889C10.1584 14.4778 9.87004 14.1264 9.50003 13.8792C9.13002 13.632 8.69501 13.5 8.25 13.5V12C9.24456 12 10.1984 12.3951 10.9017 13.0983C11.6049 13.8016 12 14.7554 12 15.75C12 16.7446 11.6049 17.6984 10.9017 18.4017C10.1984 19.1049 9.24456 19.5 8.25 19.5Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
+                        <div class="link-text">
+                            <p>Generar pedido de reposición</p>
+                        </div>
+                    </div>
+
+                    <div class="link" data-target="../pages/reportes.html">
+                        <div class="icon">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                            >
+                                <path
+                                    d="M21 1.5H3C2.6023 1.5004 2.221 1.65856 1.93978 1.93978C1.65856 2.221 1.5004 2.6023 1.5 3V21C1.5004 21.3977 1.65856 21.779 1.93978 22.0602C2.221 22.3414 2.6023 22.4996 3 22.5H21C21.3976 22.4994 21.7788 22.3412 22.06 22.06C22.3412 21.7788 22.4994 21.3976 22.5 21V3C22.4996 2.6023 22.3414 2.221 22.0602 1.93978C21.779 1.65856 21.3977 1.5004 21 1.5ZM21 8.25H10.5V3H21V8.25ZM9 3V8.25H3V3H9ZM3 21V9.75H21L21.0015 21H3Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M18 15.75H19.5V19.5H18V15.75ZM15 12H16.5V19.5H15V12ZM8.25 19.5C7.2558 19.4988 6.30267 19.1033 5.59966 18.4003C4.89666 17.6973 4.50119 16.7442 4.5 15.75H6C6 16.195 6.13196 16.63 6.37919 17C6.62643 17.37 6.97783 17.6584 7.38896 17.8287C7.8001 17.999 8.2525 18.0436 8.68895 17.9568C9.12541 17.87 9.52632 17.6557 9.84099 17.341C10.1557 17.0263 10.37 16.6254 10.4568 16.189C10.5436 15.7525 10.499 15.3001 10.3287 14.889C10.1584 14.4778 9.87004 14.1264 9.50003 13.8792C9.13002 13.632 8.69501 13.5 8.25 13.5V12C9.24456 12 10.1984 12.3951 10.9017 13.0983C11.6049 13.8016 12 14.7554 12 15.75C12 16.7446 11.6049 17.6984 10.9017 18.4017C10.1984 19.1049 9.24456 19.5 8.25 19.5Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
+                        <div class="link-text">
+                            <p>Reportes analíticos</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="link"
+                        data-target="../pages/panel-indicadores.html"
+                    >
+                        <div class="icon">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                            >
+                                <path
+                                    d="M21 1.5H3C2.6023 1.5004 2.221 1.65856 1.93978 1.93978C1.65856 2.221 1.5004 2.6023 1.5 3V21C1.5004 21.3977 1.65856 21.779 1.93978 22.0602C2.221 22.3414 2.6023 22.4996 3 22.5H21C21.3976 22.4994 21.7788 22.3412 22.06 22.06C22.3412 21.7788 22.4994 21.3976 22.5 21V3C22.4996 2.6023 22.3414 2.221 22.0602 1.93978C21.779 1.65856 21.3977 1.5004 21 1.5ZM21 8.25H10.5V3H21V8.25ZM9 3V8.25H3V3H9ZM3 21V9.75H21L21.0015 21H3Z"
+                                    fill="white"
+                                />
+                                <path
+                                    d="M18 15.75H19.5V19.5H18V15.75ZM15 12H16.5V19.5H15V12ZM8.25 19.5C7.2558 19.4988 6.30267 19.1033 5.59966 18.4003C4.89666 17.6973 4.50119 16.7442 4.5 15.75H6C6 16.195 6.13196 16.63 6.37919 17C6.62643 17.37 6.97783 17.6584 7.38896 17.8287C7.8001 17.999 8.2525 18.0436 8.68895 17.9568C9.12541 17.87 9.52632 17.6557 9.84099 17.341C10.1557 17.0263 10.37 16.6254 10.4568 16.189C10.5436 15.7525 10.499 15.3001 10.3287 14.889C10.1584 14.4778 9.87004 14.1264 9.50003 13.8792C9.13002 13.632 8.69501 13.5 8.25 13.5V12C9.24456 12 10.1984 12.3951 10.9017 13.0983C11.6049 13.8016 12 14.7554 12 15.75C12 16.7446 11.6049 17.6984 10.9017 18.4017C10.1984 19.1049 9.24456 19.5 8.25 19.5Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </div>
+                        <div class="link-text">
+                            <p>Panel de indicadores</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-indicator-4"></div>
+            </aside>
+
+            <section class="content-section">
+                <div class="order-container">
+                    <div class="page-header">
+                        <h1>Generar pedido de reposición</h1>
+                    </div>
+
+                    <div class="spacer-60"></div>
+
+                    <form id="orderForm">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="producto">Producto</label>
+                                <div class="select-wrapper">
+                                    <select id="producto">
+                                        <option value="">
+                                            Seleccione un producto
+                                        </option>
+                                    </select>
+                                    <div class="select-icon">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                        >
+                                            <path
+                                                d="M6 9L12 15L18 9"
+                                                stroke="#101540"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="fechaPedido">Fecha pedido</label>
+                                <input type="date" id="fechaPedido" />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="cantidadActual"
+                                    >Cantidad actual</label
+                                >
+                                <input
+                                    type="text"
+                                    id="cantidadActual"
+                                    disabled
+                                />
+                            </div>
+
+                            <div class="form-field">
+                                <label for="proveedor">Proveedor</label>
+                                <div class="select-wrapper">
+                                    <select id="proveedor">
+                                        <option value="">Seleccione un proveedor</option>
+                                        <option value="Empresa XYZ">Empresa XYZ</option>
+                                        <option value="Distribuidora ABC">Distribuidora ABC</option>
+                                        <option value="Proveedor DEF">Proveedor DEF</option>
+                                    </select>
+                                    <div class="select-icon">
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                        >
+                                            <path
+                                                d="M6 9L12 15L18 9"
+                                                stroke="#101540"
+                                                stroke-width="2"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="stockMinimo">Stock mínimo</label>
+                                <input type="text" id="stockMinimo" disabled />
+                            </div>
+
+                            <div class="form-field">
+                                <label for="cantidad">Cantidad</label>
+                                <input
+                                    type="text"
+                                    placeholder="Ingrese la cantidad a pedir"
+                                    id="cantidad"
+                                />
+                                <span
+                                    class="error-message"
+                                    id="error-cantidad"
+                                ></span>
+                            </div>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button
+                                type="button"
+                                class="btn-secondary"
+                                id="btnGenerar"
+                            >
+                                Generar
+                            </button>
+                            <button
+                                type="button"
+                                class="btn-secondary"
+                                id="btnCancelar"
+                            >
+                                Cancelar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <div id="confirmationModal" class="modal">
+            <div class="modal-content confirmation">
+                <h2 class="modal-title">Confirmación</h2>
+                <div class="modal-message">
+                    <p>¿Desea generar el pedido de reposición?</p>
+                </div>
+                <div class="modal-buttons">
+                    <button class="btn-primary" id="btnSi">Sí</button>
+                    <button class="btn-secondary-modal" id="btnNo">No</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="successModal" class="modal">
+            <div class="modal-content success">
+                <div class="modal-message">
+                    <p>Pedido generado correctamente</p>
+                </div>
+                <div class="modal-buttons">
+                    <button class="btn-secondary-modal" id="btnRegresar">
+                        Regresar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/generar-pedido.js"></script>
+    </body>
+</html>
